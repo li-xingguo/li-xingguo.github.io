@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Xingguo Li — Software</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Navigation</div>
+<div class="menu-item"><a href="home.html">Home</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="software.html" class="current">Software</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Xingguo Li — Software</h1>
+</div>
+<h2>R Packages </h2>
+<ul>
+<li><p><b>Picasso: Pathwise Calibrated Sparse Shooting Algorithm</b> <a href="https://cran.r-project.org/web/packages/picasso/index.html" target=&ldquo;blank&rdquo;>[download]</a><a href="http://www.cs.princeton.edu/~xingguol/publications/PICASSO.pdf" target=&ldquo;blank&rdquo;>[vignette]</a> <a href="https://jasonge27.github.io/picasso/" target=&ldquo;blank&rdquo;>[github]</a> <br />
+<b>Xingguo Li*</b>, Jian Ge*, Mengdi Wang, Tong Zhang, Han Liu, and Tuo Zhao <br /></p>
+</li>
+</ul>
+<table class="imgtable"><tr><td>
+<a href="IMGLINKTARGET"><img src="image/picasso.png" alt="alt text" width="WIDTHpx" height="HEIGHTpx" /></a>&nbsp;</td>
+<td align="left"><p><i>Description: Computationally efficient tools for fitting generalized linear model with convex or non-convex penalty. Users can enjoy the superior statistical property of non-convex penalty such as SCAD and MCP which has significantly less estimation error and overfitting compared to convex penalty such as lasso and ridge. Computation is handled by multi-stage convex relaxation and the PathwIse CAlibrated Sparse Shooting algOrithm (PICASSO) which exploits warm start initialization, active set updating, and strong rule for coordinate preselection to boost computation, and attains a linear convergence to a unique sparse local optimum with optimal statistical properties. The computation is memory-optimized using the sparse matrix output.</i></p>
+</td></tr></table>
+<p><br /><br /></p>
+<ul>
+<li><p><b>Flare: Family of Lasso Regression</b> <a href="https://cran.r-project.org/web/packages/flare/index.html" target=&ldquo;blank&rdquo;>[download]</a> <br />
+Xingguo Li, Tuo Zhao, Lie Wang, Xiaoming Yuan, and Han Liu <br /></p>
+</li>
+</ul>
+<table class="imgtable"><tr><td>
+<a href="IMGLINKTARGET"><img src="image/flare.png" alt="alt text" width="WIDTHpx" height="HEIGHTpx" /></a>&nbsp;</td>
+<td align="left"><p><i>Description: Provide the implementation of a family of Lasso variants including Dantzig Selector, LAD Lasso, SQRT Lasso, Lq Lasso for estimating high dimensional sparse linear model. We adopt the alternating direction method of multipliers and convert the original optimization problem into a sequential L1 penalized least square minimization problem, which can be efficiently solved by linearization algorithm. A multi-stage screening approach is adopted for further acceleration. Besides the sparse linear model estimation, we also provide the extension of these Lasso variants to sparse Gaussian graphical model estimation including TIGER and CLIME using either L1 or adaptive penalty. Missing values can be tolerated for Dantzig selector and CLIME. The computation is memory-optimized using the sparse matrix output.</i></p>
+</td></tr></table>
+<p><br /><br /></p>
+<ul>
+<li><p><b>Huge: High-dimensional Undirected Graph Estimation</b> <a href="https://cran.r-project.org/web/packages/huge/index.html" target=&ldquo;blank&rdquo;>[download]</a> <br />
+Tuo Zhao, Xingguo Li, Han Liu, Kathryn Roeder, John Lafferty, and Larry Wasserman <br /></p>
+</li>
+</ul>
+<table class="imgtable"><tr><td>
+<a href="IMGLINKTARGET"><img src="image/huge.png" alt="alt text" width="WIDTHpx" height="HEIGHTpx" /></a>&nbsp;</td>
+<td align="left"><p><i>Description: Provide a general framework for high-dimensional undirected graph estimation. It integrates data preprocessing, neighborhood screening, graph estimation, and model selection techniques into a pipeline. In preprocessing stage, the nonparanormal(npn) transformation is applied to help relax the normality assumption. In the graph estimation stage, the graph structure is estimated by Meinshausen-Buhlmann graph estimation or the graphical lasso, and both methods can be further accelerated by the lossy screening rule preselecting the neighborhood of each variable by correlation thresholding. We target on high-dimensional data analysis usually d &gt;&gt; n, and the computation is memory-optimized using the sparse matrix output. We also provide a computationally efficient approach, correlation thresholding graph estimation. Three regularization/thresholding parameter selection methods are included in this package: (1)stability approach for regularization selection (2) rotation information criterion (3) extended Bayesian information criterion which is only available for the graphical lasso.</i></p>
+</td></tr></table>
+<p><br /><br /></p>
+<ul>
+<li><p><b>Camel: Calibrated Machine Learning</b> <a href="https://cran.r-project.org/web/packages/camel/index.html" target=&ldquo;blank&rdquo;>[download]</a> <br />
+Xingguo Li, Tuo Zhao, and Han Liu <br /></p>
+</li>
+</ul>
+<p><i>Description: Provide the implementation of a family of high-dimensional calibrated machine learning tools, including (1) LAD, SQRT Lasso and Calibrated Dantzig Selector for estimating sparse linear models; (2) Calibrated Multivariate Regression for estimating sparse multivariate linear models; (3) Tiger, Calibrated Clime for estimating sparse Gaussian graphical models. We adopt the combination of the dual smoothing and monotone fast iterative soft-thresholding algorithm (MFISTA). The computation is memory-optimized using the sparse matrix output, and accelerated by the path following and active set tricks</i>.<br /><br /></p>
+<ul>
+<li><p><b>SAM: Sparse Additive Modeling</b> <a href="https://cran.r-project.org/web/packages/SAM/index.html" target=&ldquo;blank&rdquo;>[download]</a> <br />
+Tuo Zhao, Xingguo Li, Han Liu, and Kathryn Roeder <br /></p>
+</li>
+</ul>
+<p><i>Description: Target at high dimensional predictive modeling (regression and classification) for complex data analysis. SAM is short for sparse additive modeling, and adopts the computationally efficient basis spline technique. We solve the optimization problems by various computational algorithms including the block coordinate descent algorithm, fast iterative soft-thresholding algorithm, and newton method. The computation is further accelerated by warm-start and active-set tricks</i>.<br /><br /></p>
+<!-- Default Statcounter code for personal web
+http://www.cs.princeton.edu/~xingguol/ -->
+<script type="text/javascript">
+var sc_project=10780390; 
+var sc_invisible=0; 
+var sc_security="0114d3af"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/10780390/0/0114d3af/0/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-08-14 23:25:35 PDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
